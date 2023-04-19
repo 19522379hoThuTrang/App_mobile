@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/text_view1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text1"
+        android:layout_alignLeft="@+id/edit_text1"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text_view2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text2"
+        android:layout_alignLeft="@+id/edit_text2"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text_view3"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text2"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text1"
+        android:layout_alignBottom="@+id/edit_text1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="136dp"
+        android:text="To:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text2"
+        android:layout_alignBottom="@+id/edit_text2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="90dp"
+        android:text="Subject:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view1" />
+
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text3"
+        android:layout_alignBottom="@+id/edit_text3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="90dp"
+        android:text="Message:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view2" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text3"
+        android:layout_alignLeft="@+id/edit_text3"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

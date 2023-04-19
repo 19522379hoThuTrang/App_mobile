@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.calculator'
+    namespace 'com.example.bt5'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.calculator"
+        applicationId "com.example.bt5"
         minSdk 24
         targetSdk 33
         versionCode 1
