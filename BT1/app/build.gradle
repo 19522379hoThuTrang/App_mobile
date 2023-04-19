@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.btandroid_1'
+    namespace 'com.example.bt1'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.btandroid_1"
+        applicationId "com.example.bt1"
         minSdk 24
         targetSdk 33
         versionCode 1
