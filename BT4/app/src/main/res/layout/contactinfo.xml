@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
 
     <LinearLayout
-        android:id="@+id/lineLayout1"
+        android:id="@+id/lineLayout1_ct"
         android:layout_width="match_parent"
         android:weightSum="4"
         android:orientation="horizontal"
@@ -18,17 +16,16 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="Name"/>
-
-        <EditText
-            android:id="@+id/edit_text1"
+        <TextView
+            android:id="@+id/text_view_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            />
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/lineLayout2"
-        android:layout_below="@id/lineLayout1"
+        android:id="@+id/lineLayout2_ct"
+        android:layout_below="@id/lineLayout1_ct"
         android:layout_width="match_parent"
         android:weightSum="4"
         android:orientation="horizontal"
@@ -39,17 +36,16 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="Email"/>
-
-        <EditText
-            android:id="@+id/edit_text2"
+        <TextView
+            android:id="@+id/text_view_email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            />
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/lineLayout3"
-        android:layout_below="@id/lineLayout2"
+        android:id="@+id/lineLayout3_ct"
+        android:layout_below="@id/lineLayout2_ct"
         android:layout_width="match_parent"
         android:weightSum="4"
         android:orientation="horizontal"
@@ -60,21 +56,20 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="Project"/>
-
-        <EditText
-            android:id="@+id/edit_text3"
+        <TextView
+            android:id="@+id/text_view_project"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_below="@id/lineLayout3"
+        android:id="@+id/btn_ct"
+        android:layout_below="@id/lineLayout3_ct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Contact info"
+        android:text="Finish"
         />
 
 </RelativeLayout>
