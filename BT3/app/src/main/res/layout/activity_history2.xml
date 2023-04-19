@@ -15,17 +15,8 @@
         >
 
         <TextView
-            android:id="@+id/text_history"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center|end"
-            android:background="@color/black"
-            android:textColor="@color/white"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:id="@+id/text_result"
             android:background="@color/black"
             android:layout_gravity="center|end"
@@ -36,19 +27,30 @@
             android:paddingBottom="20dp"/>
 
         <Button
-            android:id="@+id/btn_history"
+            android:id="@+id/btn_keyboard"
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:layout_columnSpan="4"
-            android:backgroundTint="@color/darkgrey"
-            android:text="History"
-            android:textColor="@color/orange"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            />
+            android:backgroundTint="@color/darkgrey"
+            android:text="Keyboard"
+            android:textColor="@color/orange"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/darkgrey"
+            android:text="Clear History"
+            android:textColor="@color/orange"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
