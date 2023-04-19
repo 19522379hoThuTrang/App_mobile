@@ -1,45 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical"
-    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter Phone Number Need to Call"
-        android:textColor="@color/white"
-        android:paddingTop="30dp"
-        android:paddingLeft="10dp"/>
-
-    <EditText
-        android:id="@+id/text2"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/radios"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/text1"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/white"
-        android:numeric="integer"
-        tools:ignore="Deprecated,SpeakableTextPresentCheck" />
+        android:layout_height="80dp"
+        android:background="#3A3A3A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/bt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Call" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal">
 
+            <RadioButton
+                android:id="@+id/btnR"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="onRadBtnClicked" />
 
-</RelativeLayout>
+            <RadioButton
+                android:id="@+id/btnG"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="onRadBtnClicked" />
+
+            <RadioButton
+                android:id="@+id/btnB"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="onRadBtnClicked" />
+
+            <RadioButton
+                android:id="@+id/btnG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadBtnClicked" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame"
+        android:layout_width="409dp"
+        android:layout_height="649dp"
+        app:layout_constraintBottom_toTopOf="@+id/radios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:text="Hello World Radio Activity"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
